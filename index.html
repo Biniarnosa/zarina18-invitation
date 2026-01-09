@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zarina Angel Red Elegance Debut Invitation</title>
+
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: 
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
+        url('bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      color: #3b0a0a;
+    }
+    /* 🔢 AUTO NUMBERED LIST */
+.numbered-list {
+  counter-reset: item;
+}
+
+.numbered-list li {
+  counter-increment: item;
+}
+
+.numbered-list li::before {
+  content: counter(item) ". ";
+  font-weight: bold;
+  color: #7b0000;
+}
+
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(255, 236, 236, 0.88);
+      border-radius: 18px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+      border-top: 6px solid #be0000c8;
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #7b0000;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-style: italic;
+    }
+
+    .details {
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    input {
+      width: 80%;
+      padding: 14px;
+      border-radius: 10px;
+      border: 1px solid #b30000;
+      margin: 15px auto;
+      display: block;
+      font-size: 1rem;
+    }
+
+    .result {
+      margin-top: 15px;
+      padding: 15px;
+      border-radius: 12px;
+      background: #ffe6e6;
+      display: none;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px;
+    }
+
+    li {
+      padding: 6px 0;
+      text-align: center;
+    }
+
+    iframe {
+      width: 100%;
+      height: 260px;
+      border-radius: 14px;
+      border: none;
+    }
+
+    footer {
+      text-align: center;
+      color: #fff;
+      margin-top: 30px;
+    }
+
+     audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+    /* 🎉 TONIGHT'S LINE-UP */
+.lineup-card {
+  background: linear-gradient(145deg, #fff0f0, #ffd6d6);
+  border-radius: 18px;
+  padding: 30px 20px;
+  box-shadow: 0 12px 30px rgba(123,0,0,0.35);
+  border-top: 6px solid #7b0000;
+  text-align: center;
+}
+
+.lineup-title {
+  font-size: 2.4rem;
+  color: #7b0000;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.lineup-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lineup-list li {
+  padding: 10px 0;
+  font-size: 1.05rem;
+  color: #5a0000;
+}
+
+.lineup-list li span {
+  display: block;
+  font-size: 0.9rem;
+  color: #8a0000;
+  font-style: italic;
+}
+
+.lineup-divider {
+  width: 70%;
+  height: 1px;
+  background: rgba(123,0,0,0.3);
+  margin: 12px auto;
+}
+
+
+  </style>
+</head>
+
+<body>
+<div class="container">
+
+  <div class="card">
+    <h1>You're Invited</h1>
+    <p class="subtitle">To the 18th Birthday Celebration of</p>
+    <h2>❤️ Zarina Angel Arnosa ❤️</h2>
+    <div class="details">
+      <p><strong>Date:</strong> January 10, 2026</p>
+      <p><strong>Time:</strong> 5:00 PM</p>
+      <p><strong>Venue:</strong> Bario-an, Tagudin, Ilocos Sur – Pagaduan Residence</p>
+    </div>
+    <audio controls autoplay loop muted>
+        <source src="music.mp3" type="audio/mpeg">
+      </audio>
+  </div>
+
+  <div class="card lineup-card">
+  <h2 class="lineup-title">Tonight’s Line-Up</h2>
+
+  <ul class="lineup-list">
+    <li>Introduction of the Parents & Brother</li>
+   
+
+    <li>Grand Entrance</li>
+    
+    <li>
+      Opening Prayer
+      <span>SBM Elma Villarin</span>
+    </li>
+   
+
+    <li>
+      Welcome Remarks
+      <span>Papa & Mama</span>
+    </li>
+   
+
+    <li>
+      18 Wines
+      <span>Message</span>
+    </li>
+    
+
+    <li>
+      18 Candles & Gifts
+      <span>Message</span>
+    </li>
+   
+
+    <li>
+      18 Blue Bills
+      <span>Message</span>
+    </li>
+    
+
+    <li>18 Roses</li>
+
+
+    <li>Debutante’s Thank You</li>
+  
+
+    <li>Disco Party 🎶</li>
+  </ul>
+</div>
+
+
+  <div class="card">
+    <h2>Find Your Special Role</h2>
+    <p style="text-align:center">Type your name to know where you belong</p>
+    <input type="text" id="searchName" placeholder="Enter your full name" onkeyup="searchName()" />
+    <div class="result" id="resultBox"></div>
+  </div>
+
+  <div class="card">
+    <h2>🌹 18 Roses</h2>
+    <ul id="roses"class="numbered-list">
+      <li>Herminigildo Arnosa Jr.</li>
+      <li>Herminigildo Arnosa Sr.</li>
+      <li>Charvet Axl Pagaduan</li>
+      <li>Franz Raphael Reyes</li>
+      <li>Daryl Oredina</li>
+      <li>Jarred Chrysler Mina</li>
+      <li>Zachary Paul Pagaduan</li>
+      <li>Adrian Red Larioza</li>
+      <li>John Arjay Manzano</li>
+      <li>Jess Albren Llanes</li>
+      <li>Ed Aeron Cardenas</li>
+      <li>Aljay Carunongan</li>
+      <li>Shammer Sipin</li>
+      <li>Cyril Javeh Lascota</li>
+      <li>Angelito Gumangan</li>
+      <li>Charlexson Allingay</li>
+      <li>Jan Ardel Galangco</li>
+      <li>Ivan Jasper Arnosa</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🕯️ 18 Candles & Gifts</h2>
+    <ul id="candles"class="numbered-list">
+      <li>Danella Retubis</li>
+      <li>Sheila Hernando</li>
+      <li>Francis Labador</li>
+      <li>Angelica Zamora</li>
+      <li>Mary Joy Larioza</li>
+      <li>Kristel Andaya</li>
+      <li>Micaella Cruz</li>
+      <li>Florence Ann Literato</li>
+      <li>Sheila Mae Bonita</li>
+      <li>Faye Mae Calibuso</li>
+      <li>Avril Pauleen Pagaduan</li>
+      <li>Lara Janelle Pagaduan</li>
+      <li>Shane Arnosa</li>
+      <li>Ellen Grace Pagaduan</li>
+      <li>Josephine Leal</li>
+      <li>Marilyn Pagaduan</li>
+      <li>Merylyn Andaya</li>
+      <li>Jojie Laine Pagaduan</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🍷 18 Wines</h2>
+    <ul id="gifts"class="numbered-list">
+      <li>Monico Pagaduan</li>
+      <li>Pepito Pagaduan</li>
+      <li>Fristan Enrick Reyes</li>
+      <li>Ranjit Pagaduan</li>
+      <li>Melfred Ardiosa</li>
+      <li>Jerick Pagaduan</li>
+      <li>John Paul Pagaduan</li>
+      <li>Jason Mina</li>
+      <li>Jhumel Pagaduan</li>
+      <li>Guillermo Suyat</li>
+      <li>Arnulfo Larioza</li>
+      <li>Edmar Lebantino</li>
+      <li>Daniel Ladia</li>
+      <li>Juster Garcia</li>
+      <li>Maynard Lazo</li>
+      <li>Eric Tejome</li>
+      <li>Karls Markdy Calica</li>
+      <li>Jairus Lapena</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>💙 18 Blue Bills</h2>
+    <ul id="bluebills" class="numbered-list">
+
+      <li>Atty. Arvin Andaya</li>
+      <li>Roland Lumbania</li>
+      <li>Cesario Areola Jr.</li>
+      <li>Maily Lacasandile</li>
+      <li>Maui Alexis Jaira Pagaduan</li>
+      <li>Florence Arnosa</li>
+      <li>Kris Paulo Pagaduan</li>
+      <li>Jayson Castro</li>
+      <li>Mirasol Manayan</li>
+      <li>Diane Geraldine Fania</li>
+      <li>Mary Rose Princesa</li>
+      <li>Peter Pagaduan</li>
+      <li>Flory Mae Reyes</li>
+      <li>Joanna Marie Pagaduan</li>
+      <li>Peregrina Pagaduan</li>
+      <li>Roselle Garcia</li>
+      <li>Jason Suyat</li>
+      <li>Vivian Carsola</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>📍 Venue Location</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d540.7360785838669!2d120.45449646524348!3d16.94876657648534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTbCsDU2JzU0LjciTiAxMjDCsDI3JzE3LjUiRQ!5e1!3m2!1sen!2sph!4v1767518096971!5m2!1sen!2sph"></iframe>
+  </div>
+
+  <footer>
+    <p>We are honored to celebrate this unforgettable night with you ❤️</p>
+  </footer>
+
+</div>
+
+<script>
+function searchName() {
+  const input = document.getElementById('searchName').value.toLowerCase();
+  const resultBox = document.getElementById('resultBox');
+
+  resultBox.style.display = 'none';
+  resultBox.innerHTML = '';
+  if (!input) return;
+
+  const groups = [
+    { name: '18 Roses', element: document.querySelectorAll('#roses li') },
+    { name: '18 Candles & Gifts', element: document.querySelectorAll('#candles li') },
+    { name: '18 Wines', element: document.querySelectorAll('#gifts li') },
+    { name: '18 Blue Bills', element: document.querySelectorAll('#bluebills li') }
+  ];
+
+  let found = false;
+
+  groups.forEach(group => {
+    group.element.forEach((li, index) => {
+      if (li.textContent.toLowerCase().includes(input)) {
+        resultBox.style.display = 'block';
+        resultBox.innerHTML = `
+          ❤️ <strong>${li.textContent}</strong><br>
+          You are <strong>#${index + 1}</strong> in <strong>${group.name}</strong>
+        `;
+        found = true;
+      }
+    });
+  });
+
+  if (!found) {
+    resultBox.style.display = 'block';
+    resultBox.innerHTML = 'Name not found. Please contact the celebrant.';
+  }
+}
+</script>
+
+</body>
+</html>
